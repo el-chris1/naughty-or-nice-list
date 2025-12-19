@@ -1,11 +1,17 @@
 function getPoints(value){
     switch (value){
-        case 'nice'
-        
+        case 'nice':
+            return 1
+            break;
+            case 'naughty':
+                return -1;
+                break;
+        default: 
+            return -1
     }
 }
 
-function checkNaughtyorNice() {
+function checkNaughtyOrNice () {
     const q1 = document.getElementById['q1'].value
     
     const q2 = document.getElementById['q2'].value
@@ -16,7 +22,7 @@ function checkNaughtyorNice() {
     
     const q5 = document.getElementById['q5'].value
 
-
+}
     const score = getPoints(q1) + getPoints(q2) + getPoints(q3) + getPoints(q4) + getPoints(q5)
 
     if (score > 2.5) {
@@ -24,4 +30,3 @@ function checkNaughtyorNice() {
     } else{
         alert('slow your role, here is some coal!')
     }
-}
