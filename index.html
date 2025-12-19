@@ -22,7 +22,7 @@
         <header>
             <!-- place navbar here -->
         </header>
-        <dive class="container">
+        <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12">
                     <div class="card">
@@ -30,6 +30,7 @@
                         <div class="card-body">
                             <h4 class="card-title">where you naughty or nice this year </h4>
                             <p class="card-text">answer each question. blank counting  </p>
+
                             <div class="b-3">
                                 <label for="q1" class="form-label fw-semibold">did you help someone this week</label>
                                 <select id="q1" class="form-select">
@@ -47,10 +48,8 @@
                                     <option value="naughty">no</option>
                                 </select>
                             </div>
-                        </div>
-                    </div>
                  
-                    <div class="b-3">
+                            <div class="b-3">
                                 <label for="q3" class="form-label fw-semibold">did you clean up after yourself</label>
                                 <select id="q3" class="form-select">
                                     <option value="">choose</option>
@@ -58,10 +57,8 @@
                                     <option value="naughty">no</option>
                                 </select>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="b-3">
+                            <div class="b-3">
                                 <label for="q4" class="form-label fw-semibold">did you clean up after yourself</label>
                                 <select id="q4" class="form-select">
                                     <option value="">choose</option>
@@ -69,23 +66,23 @@
                                     <option value="naughty">no</option>
                                 </select>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="b-3">
+                            <div class="b-3">
                                 <label for="q5" class="form-label fw-semibold">did you clean up after yourself</label>
                                 <select id="q5" class="form-select">
                                     <option value="">choose</option>
-                                    <option value="true">yes</option>
-                                    <option value="false">no</option>
+                                    <option value="nice">yes</option>
+                                    <option value="naughty">no</option>
                                 </select>
                             </div>
-                           <button class="btn btn-lg" onclick ="checkNaughtyOrNice()">hefdjhfrhj</button>
                         </div>
                     </div>
+                    <button class="btn btn-primary" onclick ="checkNaughtyOrNice()">
+                        check status
+                    </button>
                 </div>
             </div>
-        </dive>
+        </div>
         <main></main>
         <footer>
             <!-- place footer here -->
@@ -102,5 +99,6 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+        <script src="script.js"></script>
     </body>
 </html>
