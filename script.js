@@ -7,7 +7,7 @@ function getPoints(value) {
         default: 
             return -1;
     }
-}
+}5
 function checkNaughtyOrNice () {
     const questions = ('q1','q2','q3','q4','q5');
     for (let id of questions) {
