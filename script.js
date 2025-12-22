@@ -8,22 +8,17 @@ function getPoints(value) {
             return -1;
     }
 }
-
 function checkNaughtyOrNice () {
-    const q1 = document.getElementById('q1').value;
-    const q2 = document.getElementById('q2').value;
-    const q3 = document.getElementById('q3').value;
-    const q4 = document.getElementById('q4').value;
-    const q5 = document.getElementById('q5').value;
-
-
-    const score = getPoints(q1) + getPoints(q2) + getPoints(q3) + getPoints(q4) + getPoints(q5)
-
-    if (score > 2.5) {
-        alert("ho ho ho! on the nice list you go!");
-        console.log(score);
-    } else {
-        alert("slow your role, here is some coal!");
+    const questions = ('q1','q2','q3','q4','q5');
+    for (let id of questions) {
+        score +=getPoints(document.getElementById(id).value);
+    }
+    if(score >=  4) {
+        alert("ho ho ho! On the nice list you got!")
         console.log(score);
     }
-}
+    else {
+        alert ("oh no no no. slow your role.")
+        console.log(score);
+    }
+}   
